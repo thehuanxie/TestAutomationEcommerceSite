@@ -1,5 +1,5 @@
 services:
-    jenkins:
+    jenkins_ecommerce:
         image: jenkins/jenkins:lts
         ports:
             - 8080:8080
@@ -14,7 +14,7 @@ services:
             - /usr/bin/com.docker.cli:/usr/bin/com.docker.cli
         networks:
             - jenkins_network
-    sonarqube:
+    sonarqube_ecommerce:
         image: sonarqube:9.4-community
         ports:
             - '9000:9000'
